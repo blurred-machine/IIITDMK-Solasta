@@ -2,17 +2,19 @@
     <string name="app_name">Solasta</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Solasta 2k20</string>
+    <string name="nav_header_subtitle">Rewrite the Stars 🌟</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_events">Events</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_aboutUs">About Us</string>
+    <string name="menu_schedule">Schedule</string>
+    <string name="menu_team">Team</string>
+    <string name="copyrights_solasta">Copyright © 2019 IIITDM Kurnool. All rights reserved.</string>
+    <string name="about_solasta">Solasta is a techno-cultural fest organized by the student community of IIITDM Kurnool and is aimed to develop the leadership and organizational skills in students. The annual fest includes many technical and cultural events with participants and audience from various colleges.</string>
 
 
     <string-array name="events_images">
@@ -173,8 +175,6 @@ GPay / Phonepay :- 7013778607 Account Name: Gouse Mohammad
 Send the event name as description for the payment
 Note: Proof of the payment are mandatory for you to be allowed to the workshop.</item>
     </string-array>
-
-
 
 
     <string-array name="events_prize">

@@ -2,7 +2,6 @@ package com.iiitdmk.solasta.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.iiitdmk.solasta.R;
-import com.iiitdmk.solasta.ViewHolders.EventsBaseViewHolder;
+import com.iiitdmk.solasta.ViewHolders.BaseViewHolder;
 import com.iiitdmk.solasta.data.EventsData;
 import com.iiitdmk.solasta.ui.events.EventsDetailsActivity;
 
@@ -24,7 +23,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class EventsAdapter extends RecyclerView.Adapter<EventsBaseViewHolder> {
+public class EventsAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     private static final String TAG = "EventsAdapter";
     private List<EventsData> mEventsList;
     private Context mContext;
@@ -35,12 +34,12 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsBaseViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(EventsBaseViewHolder holder, int position) {
+    public void onBindViewHolder(BaseViewHolder holder, int position) {
         holder.onBind(position);
     }
 
     @Override
-    public EventsBaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public BaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.events_single_event_layout, parent, false));
 
     }
@@ -60,7 +59,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsBaseViewHolder> {
     }
 
 
-    public class ViewHolder extends EventsBaseViewHolder {
+    public class ViewHolder extends BaseViewHolder {
 
         @BindView(R.id.ivEventThumbnailImage)
         ImageView ivEventThumbnailImage;

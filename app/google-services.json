@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "941070688528",
+    "firebase_url": "https://solasta2020-312a4.firebaseio.com",
+    "project_id": "solasta2020-312a4",
+    "storage_bucket": "solasta2020-312a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941070688528:android:1cb3a9fb2e9f0a79ed4595",
+        "android_client_info": {
+          "package_name": "com.iiitdmk.solasta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941070688528-374ao4vslbp8vcak8d4j29u5pil6iqc2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iiitdmk.solasta",
+            "certificate_hash": "364b3c68aa2d36dfcbe5c1c3e14ad92e26132e8a"
+          }
+        },
+        {
+          "client_id": "941070688528-ao6rmcrh3o4gg4sb0p6b11b3o603du9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwPCf28roe9ARSq2KIM50yj-gzW4ATR7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941070688528-ao6rmcrh3o4gg4sb0p6b11b3o603du9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

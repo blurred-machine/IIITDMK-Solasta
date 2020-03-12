@@ -24,20 +24,20 @@
         tools:layout="@layout/fragment_events" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.iiitdmk.solasta.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_aboutUs"
+        android:name="com.iiitdmk.solasta.ui.aboutUs.AboutUsFragment"
+        android:label="@string/menu_aboutUs"
+        tools:layout="@layout/fragment_about_us" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.iiitdmk.solasta.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_schedule"
+        android:name="com.iiitdmk.solasta.ui.schedule.ScheduleFragment"
+        android:label="@string/menu_schedule"
+        tools:layout="@layout/fragment_schedule" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.iiitdmk.solasta.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_team"
+        android:name="com.iiitdmk.solasta.ui.team.TeamFragment"
+        android:label="@string/menu_team"
+        tools:layout="@layout/fragment_team" />
 </navigation>

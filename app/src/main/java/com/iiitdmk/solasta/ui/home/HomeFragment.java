@@ -1,5 +1,6 @@
 package com.iiitdmk.solasta.ui.home;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -19,10 +20,14 @@ import android.widget.VideoView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.iiitdmk.solasta.MainActivity;
 import com.iiitdmk.solasta.R;
+import com.iiitdmk.solasta.ui.QRPaymentActivity;
 
 import java.util.List;
 
@@ -30,6 +35,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     public static String FACEBOOK_URL = "https://www.facebook.com/solastaiiitdm";
     public static String FACEBOOK_PAGE_ID = "solastaiiitdm";
+    public static String CALL_ADMIN_NUMBER = "+919894322678";
 
     ImageView ivPaymentQR;
     ImageView ivCallAdmin;
@@ -39,9 +45,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     ImageView ivSolastaMainLogo;
     Button btnCulturalReg;
     Button btnTechnicalReg;
-    VideoView vvTrailerVideo;
-
-    MediaController mController;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -56,14 +59,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         ivSolastaMainLogo = (ImageView) root.findViewById(R.id.ivSolastaMainLogo);
         btnCulturalReg = (Button) root.findViewById(R.id.btnCulturalReg);
         btnTechnicalReg = (Button) root.findViewById(R.id.btnTechnicalReg);
-        vvTrailerVideo = (VideoView) root.findViewById(R.id.vvTrailerVideo);
 
-        mController = new MediaController(getContext());
-        mController.setAnchorView(vvTrailerVideo);
-        vvTrailerVideo.setMediaController(mController);
 
-        vvTrailerVideo.setVideoPath("android.resource://com.iiitdmk.solasta/"+R.raw.trailer_main);
-        vvTrailerVideo.start();
 
         ivPaymentQR.setOnClickListener(this);
         ivCallAdmin.setOnClickListener(this);
@@ -81,11 +78,18 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.ivPaymentQR) {
-            Toast.makeText(getActivity(), "QR Code Payment", Toast.LENGTH_SHORT).show();
+            Intent myIntent = new Intent(getContext(), QRPaymentActivity.class);
+            startActivity(myIntent);
+
         } else if (v.getId() == R.id.ivCallAdmin) {
-            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "9894322678"));
-            startActivity(intent);
-        } else if (v.getId() == R.id.ivWebsite) {
+
+            if(!checkPermission(Manifest.permission.CALL_PHONE, 101)) {
+                checkPermission(Manifest.permission.CALL_PHONE, 101);
+            }
+        }
+
+
+        else if (v.getId() == R.id.ivWebsite) {
             Uri webpage = Uri.parse("http://iiitk.ac.in/home");
             Intent myIntent = new Intent(Intent.ACTION_VIEW, webpage);
             startActivity(myIntent);
@@ -150,7 +154,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    private void getFacebookUrlOpen(String username) {
+ /*   private void getFacebookUrlOpen(String username) {
         String url = "http://facebook.com/_u/" + username;
         String web_url = "http://facebook.com/" + username;
         Uri uri = Uri.parse(url);
@@ -161,6 +165,20 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             startActivity(insta);
         } else {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(web_url)));
+        }
+    }*/
+
+
+    public boolean checkPermission(String permission, int requestCode)
+    {
+        if (ContextCompat.checkSelfPermission(getActivity(), permission) == PackageManager.PERMISSION_DENIED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[] { permission }, requestCode);
+            return false;
+        }
+        else {
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + CALL_ADMIN_NUMBER));
+            startActivity(intent);
+            return true;
         }
     }
 }

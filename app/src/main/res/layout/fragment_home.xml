@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backdrop2">
+    android:background="@drawable/main_backdrop">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -36,14 +36,13 @@
 
                     <ImageView
                         android:id="@+id/ivPaymentQR"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/ic_qr_code" />
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="7.5dp"
+                        android:src="@drawable/ic_qr_main" />
                 </androidx.cardview.widget.CardView>
 
-
-                <ImageView
-                    android:id="@+id/ivCallAdmin"
+                <androidx.cardview.widget.CardView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="5dp"
@@ -52,10 +51,18 @@
                     android:layout_marginEnd="5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/ic_phone_call" />
+                    app:cardCornerRadius="30dp">
 
                 <ImageView
-                    android:id="@+id/ivWebsite"
+                    android:id="@+id/ivCallAdmin"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_phone_call" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="5dp"
@@ -64,7 +71,15 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/ivWebsite"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
                     android:src="@drawable/ic_computer" />
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
@@ -108,8 +123,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/llHomeMain1">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
@@ -120,14 +135,14 @@
 
                     <ImageView
                         android:id="@+id/ivFacebook"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:src="@drawable/ic_facebook" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
@@ -138,8 +153,8 @@
 
                     <ImageView
                         android:id="@+id/ivInstagram"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_margin="5dp"
                         android:src="@drawable/ic_instagram" />
                 </androidx.cardview.widget.CardView>
@@ -151,12 +166,35 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical"
                 app:layout_constraintTop_toBottomOf="@+id/llHomeMain2">
+
+                <!-- video player
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="VIDEO TRAILER"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#c0c0c0" />
 
                 <VideoView
                     android:id="@+id/vvTrailerVideo"
                     android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
                     android:layout_height="300dp"/>
+
+                    -->
             </LinearLayout>
 
             <LinearLayout
@@ -175,6 +213,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="REGISTERATIONS"
                     android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
                     android:textSize="22dp" />
 
                 <View
@@ -191,6 +230,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginEnd="30dp"
                     android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
                     android:orientation="vertical">
 
                     <Button
