@@ -115,6 +115,13 @@
                     android:layout_margin="10dp"
                     android:src="@drawable/ic_earth" />
 
+                <ImageView
+                    android:id="@+id/ivAboutUsMap"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_location" />
+
             </LinearLayout>
 
 

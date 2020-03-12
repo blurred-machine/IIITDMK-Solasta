@@ -32,6 +32,7 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener {
     ImageView ivWebsite;
     ImageView ivFacebook;
     ImageView ivInstagram;
+    ImageView ivAboutUsMap;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -45,14 +46,16 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener {
         mController.setAnchorView(vvAboutUsTrailerVideo);
         vvAboutUsTrailerVideo.setMediaController(mController);
 
-        vvAboutUsTrailerVideo.setVideoPath("android.resource://com.iiitdmk.solasta/"+R.raw.trailer_main);
+        vvAboutUsTrailerVideo.setVideoPath("android.resource://com.iiitdmk.solasta/" + R.raw.trailer_main);
         vvAboutUsTrailerVideo.stopPlayback();
 
 
         ivWebsite = (ImageView) root.findViewById(R.id.ivAboutUsWebsite);
+        ivAboutUsMap = (ImageView) root.findViewById(R.id.ivAboutUsMap);
         ivFacebook = (ImageView) root.findViewById(R.id.ivAboutUsFacebook);
         ivInstagram = (ImageView) root.findViewById(R.id.ivAboutUsInstagram);
         ivWebsite.setOnClickListener(this);
+        ivAboutUsMap.setOnClickListener(this);
         ivFacebook.setOnClickListener(this);
         ivInstagram.setOnClickListener(this);
 
@@ -61,10 +64,17 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.ivWebsite){
+        if (v.getId() == R.id.ivWebsite) {
             Uri webpage = Uri.parse("http://iiitk.ac.in/home");
             Intent myIntent = new Intent(Intent.ACTION_VIEW, webpage);
             startActivity(myIntent);
+        } else if (v.getId() == R.id.ivAboutUsMap) {
+
+
+            Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                    Uri.parse("http://maps.google.com/maps?daddr=15.7618,78.0364"));
+            startActivity(intent);
+
         } else if (v.getId() == R.id.ivFacebook) {
             Uri webpage = Uri.parse(getFacebookPageURL(getContext()));
             Intent myIntent = new Intent(Intent.ACTION_VIEW, webpage);
