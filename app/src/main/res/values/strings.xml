@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name">Solasta</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+    <string-array name="events_images">
+        <item>android.resource://com.iiitdmk.solasta/drawable/fun1</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/fun2</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/fun3</item>
+
+        <item>android.resource://com.iiitdmk.solasta/drawable/drama1</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/drama2</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/drama3</item>
+
+        <item>android.resource://com.iiitdmk.solasta/drawable/music1</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/music2</item>
+
+        <item>android.resource://com.iiitdmk.solasta/drawable/thug_dancers1</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/thug_dancers2</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/thug_dancers3</item>
+
+        <item>android.resource://com.iiitdmk.solasta/drawable/rev_code_data_science1</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/rev_code1</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/rev_code2</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/rev_code3</item>
+
+        <item>android.resource://com.iiitdmk.solasta/drawable/mech1</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/mech2</item>
+        <item>android.resource://com.iiitdmk.solasta/drawable/mech3</item>
+
+        <item>android.resource://com.iiitdmk.solasta/drawable/workshop_cyber</item>
+
+
+    </string-array>
+
+    <string-array name="events_titles">
+        <item>Treasure Hunt</item>
+        <item>Stay Hungry</item>
+        <item>Private Eye</item>
+
+        <item>Mannequin Challenge</item>
+        <item>Raise the Curtain</item>
+        <item>Spot Light</item>
+
+        <item>Battle of Bands</item>
+        <item>Roohaniyat</item>
+
+        <item>Bop Till U Drop</item>
+        <item>Hoedown</item>
+        <item>Splash It</item>
+
+        <item>Are You There?</item>
+        <item>Reverse Coding</item>
+        <item>Code ON</item>
+        <item>App-A-Thon</item>
+
+        <item>Construss</item>
+        <item>FdotS</item>
+        <item>The CAD Competition</item>
+
+        <item>Cyber Security</item>
+    </string-array>
+
+    <string-array name="events_description">
+        <item>Join the party, mate! It\'s going to be fun! on 14th March 2020 at 10 A.M.</item>
+        <item>Eating competition, Fastest win it all! on 14th March from 12:00 P.M. - 1:00 P.M.</item>
+        <item>Explore the Sherlock in you</item>
+
+        <item>-</item>
+        <item>-</item>
+        <item>The best time to shine in the era of walking shadows on March 13th 2020, Time: 17:00 – 19:00.</item>
+
+        <item>15 March 4:00 P.M. onwards, Venue:The Stage</item>
+        <item>Solo Singing Competition, March 14th 2020, 2:00 P.M. onward, Venue:The Institute Seminar Hall</item>
+
+        <item>Group Dance(Min. 4 members, Max. Time 4 Minutes), Registration fee is applicable</item>
+        <item>For Solo performance Max. Duration:4 Minutes, For Duo performance Max. Duration:4 Minutes, Registration fee is applicable</item>
+        <item>Registration fee is applicable</item>
+
+        <item>SO, guessing what is it right.... We are going to conduct a machine learning competition for which the clue for the question is given above "are you there?" Let me add 1 more.. its going to be a classification problem guys.</item>
+        <item>Put on your thinking caps and train your natural neural networks. For reverse coding will have you recognizing patterns in functions and replicating them. You will be given a set of executable files that accept input and give an output after performing some function on them. Your task is to figure out what function is hidden in the code and replicate it.</item>
+        <item>Coding competition consisting of 5 question.</item>
+        <item>Participants have to choose one among the five given topics and make a Web/Android/IOS application on that topic.</item>
+
+        <item>To design a truss/suspension bridge using popsicle sticks, cotton strings and adhesive(without using any strengthening coating) that can sustain the maximum possible load and can satisfy all the understated constraints.</item>
+        <item>A 2-tier event which tests your recollection and practical application of concepts of mechanics and aerodynamics.</item>
+        <item>To be conducted at SOLASTA 2020. Registrations are open and people are flooding the counters to get to compete in this event and win exciting rewards. You too can earn Some easy money by registering before 11:59 PM, 11th march</item>
+
+        <item>A hands on session on cyber-security</item>
+    </string-array>
+
+
+    <string-array name="events_rules">
+        <item></item>
+        <item></item>
+        <item></item>
+
+
+        <item></item>
+        <item></item>
+        <item></item>
+
+
+        <item></item>
+        <item></item>
+
+
+        <item></item>
+        <item></item>
+        <item></item>
+
+
+        <item></item>
+        <item>it is an online event
+total duration is 2 hrs
+Code directly from hackerrank platform, which supports over 30 languages.
+All submissions are run through a plagiarism detector. Any case of code plagiarism will disqualify both users from the contest.
+You will be given output of the certain algorithm, you have to find it in accordance with the input test case.
+Join the Competition at this link :
+will be updated soon</item>
+        <item>it is an online event
+coding platform will be codechef
+All submissions are run through a plagiarism detector. Any case of code plagiarism will disqualify both users from the contest.
+There will be 5 Algorithmic questions. Participants have to solve them within the given time duration using any one of the programming languages.
+Join the Competition at this link :
+will be updated soon</item>
+        <item>online event
+it is a 3 day event
+This is a team participation online event. Maximum 3 members can be there in a team.
+Join the Competition at this link :
+will be updated soon
+( Take a look at the ReadMe )</item>
+
+        <item>Dimensions of the bridge like height, width, length of deck etc. will be given with tolerance limits.
+Weight should be within the specified limit.
+Bridge should be very stable on the arena made for testing.</item>
+        <item>Round 1: CROSSWORD
+Teams of 3 will solve the given set of clues to identify the words in the crossword and plug them in appropriately. Qualification to round 2 will be based on score from round 1.
+Round 2: AEROMODELLING
+Selected teams will be asked to prototype an aerial vehicle with some specified constraints including time span. The parameters for judging will not be disclosed till the results.</item>
+        <item>The event is going to be conducted in 2 divisions namely:
+DIVISION 1:
+Aimed for people who can sketch in CAD software(like our 1st years/2D modelling).
+DIVISION 2:
+Aimed for people who can design in 3D CAD softwares.</item>
+
+        <item>workshop fee: ₹200
+TOPICS COVERED:
+Introduction to Ethical Hacking Based on Cyber Crimes Attacks
+Information Gathering (foot printing and scanning methodologies)
+System/Windows Hacking
+Hacking Wireless Networks
+Website Hacking and Security Standards
+Hacking Mobile Platforms
+Social Engineering
+Hacking By Key-loggers, Trojans, Backdoors and Viruses
+Cyber Crime Awareness and Case Study
+Payment details
+Cash to Volunteers (Gouse Mohammad, Gayathri Akkinapalli)
+GPay / Phonepay :- 7013778607 Account Name: Gouse Mohammad
+Send the event name as description for the payment
+Note: Proof of the payment are mandatory for you to be allowed to the workshop.</item>
+    </string-array>
+
+
+
+
+    <string-array name="events_prize">
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>800</item>
+        <item>1000</item>
+        <item>800</item>
+
+        <item></item>
+        <item>1500</item>
+
+        <item>2000</item>
+        <item>1000</item>
+        <item>1500</item>
+
+        <item>8000</item>
+        <item>7000</item>
+        <item>7000</item>
+        <item>7000</item>
+
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item></item>
+    </string-array>
+
+
+</resources>
