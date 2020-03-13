@@ -198,6 +198,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/llHomeMain4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -211,7 +212,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
-                    android:text="REGISTERATIONS"
+                    android:text="REGISTRATIONS"
                     android:textColor="@color/colorBlack"
                     android:textStyle="bold"
                     android:textSize="22dp" />
@@ -254,6 +255,46 @@
                         android:textSize="20dp" />
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHomeMain5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llHomeMain4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="ANNOUNCEMENTS"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#c0c0c0" />
+
+                <TextView
+                    android:id="@+id/tvAnnouncements"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:autoLink="all"
+                    android:text="All Live Updated!"
+                    android:textColor="@color/colorBlack"
+                    android:alpha="0.8"
+                    android:background="@color/cardview_light_background"/>
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

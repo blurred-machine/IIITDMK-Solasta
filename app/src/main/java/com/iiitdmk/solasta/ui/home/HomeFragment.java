@@ -5,27 +5,26 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
-import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.MediaController;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.VideoView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.material.snackbar.Snackbar;
-import com.iiitdmk.solasta.MainActivity;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.iiitdmk.solasta.R;
 import com.iiitdmk.solasta.ui.QRPaymentActivity;
 
@@ -35,7 +34,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     public static String FACEBOOK_URL = "https://www.facebook.com/solastaiiitdm";
     public static String FACEBOOK_PAGE_ID = "solastaiiitdm";
-    public static String CALL_ADMIN_NUMBER = "+919894322678";
+    public static String CALL_ADMIN_NUMBER = "+917675816716";
 
     ImageView ivPaymentQR;
     ImageView ivCallAdmin;
@@ -45,7 +44,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     ImageView ivSolastaMainLogo;
     Button btnCulturalReg;
     Button btnTechnicalReg;
+    TextView tvAnnouncements;
 
+    private FirebaseFirestore mFirestore = FirebaseFirestore.getInstance();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -59,6 +60,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         ivSolastaMainLogo = (ImageView) root.findViewById(R.id.ivSolastaMainLogo);
         btnCulturalReg = (Button) root.findViewById(R.id.btnCulturalReg);
         btnTechnicalReg = (Button) root.findViewById(R.id.btnTechnicalReg);
+        tvAnnouncements = (TextView) root.findViewById(R.id.tvAnnouncements);
 
 
 
@@ -71,9 +73,34 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         btnCulturalReg.setOnClickListener(this);
         btnTechnicalReg.setOnClickListener(this);
 
-
+        getFirebaseTeamData();
         return root;
     }
+
+    private void getFirebaseTeamData() {
+
+        mFirestore.collection("announcements")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Log.d("solaoss", document.getId() + " => " + document.getData());
+                                String[] ann = document.getData().toString().split("announcement_main=");
+//                                Toast.makeText(getContext(), ann[1], Toast.LENGTH_SHORT).show();
+                                tvAnnouncements.setText(ann[1]);
+                            }
+                        } else {
+                            Log.d("solaoss", "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+
+//        Toast.makeText(getContext(), announcementsList.get(0), Toast.LENGTH_SHORT).show();
+    }
+
+
 
     @Override
     public void onClick(View v) {

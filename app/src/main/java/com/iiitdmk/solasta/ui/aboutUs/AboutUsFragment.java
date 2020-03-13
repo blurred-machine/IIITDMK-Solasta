@@ -1,5 +1,6 @@
 package com.iiitdmk.solasta.ui.aboutUs;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -10,9 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.MediaController;
-import android.widget.Toast;
-import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -26,13 +24,12 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener {
     public static String FACEBOOK_URL = "https://www.facebook.com/solastaiiitdm";
     public static String FACEBOOK_PAGE_ID = "solastaiiitdm";
 
-    VideoView vvAboutUsTrailerVideo;
-    MediaController mController;
 
     ImageView ivWebsite;
     ImageView ivFacebook;
     ImageView ivInstagram;
     ImageView ivAboutUsMap;
+    ImageView ivTrailerPlayer;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -40,24 +37,20 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener {
         View root = inflater.inflate(R.layout.fragment_about_us, container, false);
 
 
-        vvAboutUsTrailerVideo = (VideoView) root.findViewById(R.id.vvAboutUsTrailerVideo);
-
-        mController = new MediaController(getContext());
-        mController.setAnchorView(vvAboutUsTrailerVideo);
-        vvAboutUsTrailerVideo.setMediaController(mController);
-
-        vvAboutUsTrailerVideo.setVideoPath("android.resource://com.iiitdmk.solasta/" + R.raw.trailer_main);
-        vvAboutUsTrailerVideo.stopPlayback();
-
-
         ivWebsite = (ImageView) root.findViewById(R.id.ivAboutUsWebsite);
         ivAboutUsMap = (ImageView) root.findViewById(R.id.ivAboutUsMap);
         ivFacebook = (ImageView) root.findViewById(R.id.ivAboutUsFacebook);
         ivInstagram = (ImageView) root.findViewById(R.id.ivAboutUsInstagram);
+        ivTrailerPlayer = (ImageView) root.findViewById(R.id.ivTrailerPlayer);
         ivWebsite.setOnClickListener(this);
         ivAboutUsMap.setOnClickListener(this);
         ivFacebook.setOnClickListener(this);
         ivInstagram.setOnClickListener(this);
+        ivTrailerPlayer.setOnClickListener(this);
+
+        /*Intent intent = new Intent(getContext(), YoutubePlayerActivity.class);
+        intent.putExtra("videoKey", "rPcui8gFlm4");
+        startActivity(intent);*/
 
         return root;
     }
@@ -81,6 +74,20 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener {
             startActivity(myIntent);
         } else if (v.getId() == R.id.ivInstagram) {
             getInstagramUrlOpen("solasta_iiitdmk");
+        } else if (v.getId() == R.id.ivTrailerPlayer) {
+            playYoutubeVideo("c1WFwx-Xxv8");
+
+        }
+    }
+
+    private void playYoutubeVideo(String videoKey) {
+        Intent appIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube:" + videoKey));
+        Intent webIntent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://www.youtube.com/watch?v=" + videoKey));
+        try {
+            getContext().startActivity(appIntent);
+        } catch (ActivityNotFoundException ex) {
+            getContext().startActivity(webIntent);
         }
     }
 

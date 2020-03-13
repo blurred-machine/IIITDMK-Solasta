@@ -20,10 +20,34 @@
                 android:orientation="vertical"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <VideoView
-                    android:id="@+id/vvAboutUsTrailerVideo"
+<!--                <VideoView-->
+<!--                    android:id="@+id/vvAboutUsTrailerVideo"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="300dp" />-->
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="300dp" />
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/trailer_backdrop"
+                        android:background="@color/colorBlack"/>
+
+
+                    <ImageView
+                        android:id="@+id/ivTrailerPlayer"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_play_circle_filled_white"/>
+
+
+
+                </FrameLayout>
+
+
 
             </LinearLayout>
 
