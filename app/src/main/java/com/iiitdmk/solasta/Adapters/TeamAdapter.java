@@ -30,7 +30,7 @@ public class TeamAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     private static final String TAG = "TeamAdapter";
     private List<TeamData> mTeamList;
     private Context mContext;
-    private ArrayList<Integer> imagesList = new ArrayList<>();
+//    private ArrayList<String> imagesList = new ArrayList<>();
 
     public TeamAdapter(List<TeamData> teamList, Context mcontext) {
         mTeamList = teamList;
@@ -44,15 +44,31 @@ public class TeamAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     @Override
     public BaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        imagesList.add(R.drawable.u_gayathri);
-        imagesList.add(R.drawable.u_gouse);
-        imagesList.add(R.drawable.u_karthik);
-        imagesList.add(R.drawable.u_lasya);
-        imagesList.add(R.drawable.u_mrunal);
-        imagesList.add(R.drawable.u_naveen);
-        imagesList.add(R.drawable.u_niharika);
-        imagesList.add(R.drawable.u_rohitha);
-        imagesList.add(R.drawable.u_venkatesh);
+
+//        String baseUrl = "http://www.solasta.org.in";
+//
+//        imagesList.add(baseUrl+"/static/media/anshProf.f3a69362.jpg");
+//        imagesList.add(baseUrl+"/static/media/gayathri.c618161e.jpg");
+//        imagesList.add(baseUrl+"/static/media/gauss.7d4365a0.JPG");
+//        imagesList.add(baseUrl+"/static/media/Karthik.aa6f930d.jpg");
+//        imagesList.add(baseUrl+"-");
+//        imagesList.add(baseUrl+"/static/media/mrunal.07d76f04.JPG");
+//        imagesList.add(baseUrl+"/static/media/mukesh.a14a72ca.jpeg");
+//        imagesList.add(baseUrl+"/static/media/naveen.0d4c698f.jpeg");
+//        imagesList.add(baseUrl+"/static/media/Niharika.1c614648.jpeg");
+//        imagesList.add(baseUrl+"/static/media/Rohitha.e9a68bca.jpg");
+//        imagesList.add(baseUrl+"/static/media/venki.f0146290.jpeg");
+
+
+
+
+//        imagesList.add(R.drawable.u_karthik);
+//        imagesList.add(R.drawable.u_lasya);
+//        imagesList.add(R.drawable.u_mrunal);
+//        imagesList.add(R.drawable.u_naveen);
+//        imagesList.add(R.drawable.u_niharika);
+//        imagesList.add(R.drawable.u_rohitha);
+//        imagesList.add(R.drawable.u_venkatesh);
 
         return new TeamAdapter.ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.team_single_member_layout, parent, false));
 
@@ -101,18 +117,18 @@ public class TeamAdapter extends RecyclerView.Adapter<BaseViewHolder> {
             super.onBind(position);
             final TeamData mTeamMember = mTeamList.get(position);
 
-            try{
-                Glide.with(itemView.getContext())
-                        .load(imagesList.get(position))
-                        .placeholder(R.drawable.ic_people_black)
-                        .dontAnimate()
-                        .into(ivTeamMemberImage);
-            }catch (Exception e){
-                Glide.with(itemView.getContext())
-                        .load("")
-                        .placeholder(R.drawable.ic_people_black)
-                        .into(ivTeamMemberImage);
-            }
+//            Glide.with(itemView.getContext())
+//                    .load(imagesList.get(position))
+//                    .placeholder(R.drawable.ic_people_black)
+//                    .into(ivTeamMemberImage);
+//
+
+
+            Glide.with(itemView.getContext())
+                    .load(mTeamMember.getImageUrl())
+                    .placeholder(R.drawable.ic_people_black)
+                    .into(ivTeamMemberImage);
+
 
             if (mTeamMember.getName() != null) {
                 ivTeamMemberName.setText(mTeamMember.getName());

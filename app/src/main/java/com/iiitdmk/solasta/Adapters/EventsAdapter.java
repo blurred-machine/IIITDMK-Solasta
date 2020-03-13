@@ -99,18 +99,13 @@ public class EventsAdapter extends RecyclerView.Adapter<BaseViewHolder> {
                 if (mEvent.getSubTitle() != null) {
                     try {
 
-                    /*Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                    intent.setData(Uri.parse(mEvent.getImageUrl()));
-                    itemView.getContext().startActivity(intent);*/
-
                         Intent intent = new Intent(mContext, EventsDetailsActivity.class);
                         intent.putExtra("event_name", mEvent.getSubTitle());
                         intent.putExtra("event_description", mEvent.getInfo());
                         intent.putExtra("event_imageUrl", mEvent.getImageUrl());
                         intent.putExtra("event_rules", mEvent.getRules());
                         intent.putExtra("event_prize", mEvent.getPrize());
+                        intent.putExtra("event_register", mEvent.getEventRegister());
                         mContext.startActivity(intent);
 
                     } catch (Exception e) {

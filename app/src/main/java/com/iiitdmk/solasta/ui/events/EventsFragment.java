@@ -66,11 +66,12 @@ public class EventsFragment extends Fragment {
             String[] events_description = getResources().getStringArray(R.array.events_description);
             String[] events_rules = getResources().getStringArray(R.array.events_rules);
             String[] events_prize = getResources().getStringArray(R.array.events_prize);
+            String[] events_register = getResources().getStringArray(R.array.events_register);
 
             String[] events_images = getResources().getStringArray(R.array.events_images);
 
             for (int i = 0; i < events_titles.length; i++) {
-                mEventsList.add(new EventsData(events_images[i], events_description[i], events_titles[i], events_rules[i], events_prize[i]));
+                mEventsList.add(new EventsData(events_images[i], events_description[i], events_titles[i], events_rules[i], events_prize[i], events_register[i]));
             }
             mEventsAdapter.addItems(mEventsList);
             mRecyclerView.setAdapter(mEventsAdapter);

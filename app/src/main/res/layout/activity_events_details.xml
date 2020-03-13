@@ -22,10 +22,9 @@
                 <ImageView
                     android:id="@+id/ivDetailImage"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_height="500dp"
                     android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -134,6 +133,23 @@
                         android:text="prizes"
                         android:textSize="14dp" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDetailed5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/llDetailed4">
+
+                    <Button
+                        android:id="@+id/btnRegisterEvent"
+                        android:layout_width="wrap_content"
+                        android:layout_margin="16dp"
+                        android:layout_height="wrap_content"
+                        android:text="register"/>
+                </LinearLayout>
+
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </FrameLayout>
 

@@ -18,31 +18,37 @@
 
 
     <string-array name="events_images">
-        <item>android.resource://com.iiitdmk.solasta/drawable/fun1</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/fun2</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/fun3</item>
+        <item>http://www.solasta.org.in/static/media/treasure.01719994.png</item>
+        <item>http://www.solasta.org.in/static/media/stayHungry.98e780d6.jpg</item>
+        <item>http://www.solasta.org.in/static/media/privateEye.69953845.jpeg</item>
 
-        <item>android.resource://com.iiitdmk.solasta/drawable/drama1</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/drama2</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/drama3</item>
+        <item>http://www.solasta.org.in/static/media/MC.72961613.jpg</item>
+        <item>http://www.solasta.org.in/static/media/raiseCurtain.17cb1b22.jpg</item>
+        <item>http://www.solasta.org.in/static/media/spot.abdb1ffc.jpg</item>
 
-        <item>android.resource://com.iiitdmk.solasta/drawable/music1</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/music2</item>
+        <item>http://www.solasta.org.in/static/media/BOB.4294233a.png</item>
+        <item>http://www.solasta.org.in/static/media/ROOHANIYAT.3b9ee79a.png</item>
 
-        <item>android.resource://com.iiitdmk.solasta/drawable/thug_dancers1</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/thug_dancers2</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/thug_dancers3</item>
+        <item>http://www.solasta.org.in/static/media/btud.215f8e5f.png</item>
+        <item>http://www.solasta.org.in/static/media/hoedown.d0137da4.jpg</item>
+        <item>http://www.solasta.org.in/static/media/splash.ae8757f6.png</item>
 
-        <item>android.resource://com.iiitdmk.solasta/drawable/rev_code_data_science1</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/rev_code1</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/rev_code2</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/rev_code3</item>
+        <item>http://www.solasta.org.in/static/media/DataScience.19407b3a.jpg</item>
+        <item>http://www.solasta.org.in/static/media/revcoding.36b4c065.jpg</item>
+        <item>http://www.solasta.org.in/static/media/codeon.5df09569.jpg</item>
+        <item>http://www.solasta.org.in/static/media/appathon.3e066592.png</item>
 
-        <item>android.resource://com.iiitdmk.solasta/drawable/mech1</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/mech2</item>
-        <item>android.resource://com.iiitdmk.solasta/drawable/mech3</item>
+        <item>http://www.solasta.org.in/static/media/construss.c561b65d.jpg</item>
+        <item>http://www.solasta.org.in/static/media/FdotS.24cf5d9d.png</item>
+        <item>http://www.solasta.org.in/static/media/CAD.84077964.png</item>
 
-        <item>android.resource://com.iiitdmk.solasta/drawable/workshop_cyber</item>
+        <item>http://www.solasta.org.in/static/media/cyber.633301af.jpg</item>
+
+        <item>http://www.solasta.org.in/static/media/theme.e893f948.png</item>
+        <item>http://www.solasta.org.in/static/media/selfie.f6c9050c.png</item>
+        <item>http://www.solasta.org.in/static/media/poser.8fabb0e5.png</item>
+        <item>http://www.solasta.org.in/static/media/colDrama.4b425cc7.png</item>
+        <item>http://www.solasta.org.in/static/media/pro.74f46558.png</item>
 
 
     </string-array>
@@ -73,6 +79,13 @@
         <item>The CAD Competition</item>
 
         <item>Cyber Security</item>
+
+        <item>Theme Photography</item>
+        <item>Huge Selfie</item>
+        <item>#poster</item>
+        <item>College Drama</item>
+        <item>Pro-edit</item>
+
     </string-array>
 
     <string-array name="events_description">
@@ -101,30 +114,37 @@
         <item>To be conducted at SOLASTA 2020. Registrations are open and people are flooding the counters to get to compete in this event and win exciting rewards. You too can earn Some easy money by registering before 11:59 PM, 11th march</item>
 
         <item>A hands on session on cyber-security</item>
+
+        <item>A theme is an overarching concept that a photographer adheres to. Using photography themes is a great way to inspire creativity. So, add focus to your creative energy and snap the best on the below-mentioned themes to grab the prize money!</item>
+        <item>It\’s so simple! Participants just have to click a selfie. Twist is that the selfie with the maximum number of people in the pic wins! So, make sure you grab people and create a good shot of many smiling faces.</item>
+        <item>A pair of photographer and a poser can participate in this event. While one poses for a product (given by the organizer), the other should create a good shot that shows off product and also features the poser. The event goes like you are in a photo shoot where the participating pair is a brand ambassador and a cameraman.</item>
+        <item>Participants should submit photographs taken outdoors i.e., your best shots of our college, displaying elements like infrastructure, plants or routines at our college or close-ups of natural scenes on our hills. Shoot the best out of our college and submit us to win!</item>
+        <item>Participants need to edit the photographs at it\'s best, to look more eye-catching. So, upgrade the snap till its attractive mark and win the prize money! Photos will be sent to participants after the registration.</item>
+
     </string-array>
 
 
     <string-array name="events_rules">
-        <item></item>
-        <item></item>
-        <item></item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
 
 
-        <item></item>
-        <item></item>
-        <item></item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
 
 
-        <item></item>
-        <item></item>
+        <item> </item>
+        <item> </item>
 
 
-        <item></item>
-        <item></item>
-        <item></item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
 
 
-        <item></item>
+        <item> </item>
         <item>it is an online event
 total duration is 2 hrs
 Code directly from hackerrank platform, which supports over 30 languages.
@@ -174,19 +194,53 @@ Cash to Volunteers (Gouse Mohammad, Gayathri Akkinapalli)
 GPay / Phonepay :- 7013778607 Account Name: Gouse Mohammad
 Send the event name as description for the payment
 Note: Proof of the payment are mandatory for you to be allowed to the workshop.</item>
+
+        <item>It is an online event
+THEMES:
+1. Monochrome
+2. Culture of India
+3. Street Photography
+4. Architectural Photography
+5. Abstract Photography
+Not more than 3 photos will be accepted. All 3 photos should be from 3 different themes mentioned.
+1 pic will be accepted on 1 theme.
+No restriction on the camera being used.
+Entries found to be copied from the internet or other sources will be disqualified.
+Photographs should be clicked in JPEG format.
+Photos should be without any borders, frames and watermarks.</item>
+
+        <item>It is an offline event
+No selfie sticks allowed
+All the participants must click the pic with the same mobile phone (provided by the organizer).
+Out of all the snaps of one participant, only one submission is allowed.
+Neither furniture to be damaged nor people to be harmed while you are trying to create a huge selfie.</item>
+        <item>No restrictions on camera being used
+Only five captures are allowed, out of which one clean shot with well pose can be submitted.
+The participating pair shouldn’t take much time for posing and clicking.
+Brand of the product should also concentrate for the shot, not just the poser.</item>
+        <item>It is an online event
+Only one submission is allowed per each participant.
+The photograph must have segments of only our institute like buildings, plant-life and other features.
+No restriction on the camera being used.</item>
+        <item>It is an online event
+Each participant can submit one or more entries. But, only one entry per each pic.
+Only provided pics must be edited, other pics are not considered.
+Edits can be used only to improvise the texture of the shots, usage of edits like borders/frames and others are not allowed.
+No restriction on software/app being used.</item>
+
     </string-array>
 
 
     <string-array name="events_prize">
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
 
         <item>800</item>
         <item>1000</item>
         <item>800</item>
 
-        <item></item>
+        <item>0</item>
         <item>1500</item>
 
         <item>2000</item>
@@ -198,12 +252,57 @@ Note: Proof of the payment are mandatory for you to be allowed to the workshop.<
         <item>7000</item>
         <item>7000</item>
 
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
 
-        <item></item>
+        <item>0</item>
+
+        <item>1000</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+
+
     </string-array>
 
+
+
+    <string-array name="events_register">
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+
+
+        <item>https://docs.google.com/forms/d/e/1FAIpQLScKEqNXOv7GZmHD0B4X3F734JoK0nDCj29–6741nRGKitIeow/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSfgFL1cTsbB058JG-rJwnPcwNMwKWmeSo9lW1PYdgQn3rVqiw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSemmdyEoYfhMlpA72o_dU32QHc8udE9td3KbnnNPsFAeVyZvw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSd9KzWP0cDZYnjTbGkgw3mwNw-2EnJpQX7mmXj421znJ1PtHw/viewform</item>
+
+        <item>https://docs.google.com/forms/d/e/1FAIpQLScKEqNXOv7GZmHD0B4X3F734JoK0nDCj29–6741nRGKitIeow/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLScKEqNXOv7GZmHD0B4X3F734JoK0nDCj29–6741nRGKitIeow/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLScKEqNXOv7GZmHD0B4X3F734JoK0nDCj29–6741nRGKitIeow/viewform</item>
+
+        <item>https://docs.google.com/forms/d/e/1FAIpQLScme88nwPlFuuOLUiSP5h0fgUNYiNg-yB7rUA1s65Tfd4jW1g/viewform</item>
+
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdSt7_p9SZeQdth2auPNOJYhzD32vJlJEod5TDyADjcKWYhRw/viewform</item>
+
+    </string-array>
 
 </resources>

@@ -14,13 +14,16 @@ public class EventsData {
     private String mEventRules;
     @SerializedName("eventPrize")
     private String mEventPrize;
+    @SerializedName("event_register")
+    private String mEvent_register;
 
-    public EventsData(String mImageUrl, String mInfo, String mSubTitle, String mEventRules, String mEventPrize) {
+    public EventsData(String mImageUrl, String mInfo, String mSubTitle, String mEventRules, String mEventPrize,String mEvent_register ) {
         this.mImageUrl = mImageUrl;
         this.mInfo = mInfo;
         this.mSubTitle = mSubTitle;
         this.mEventRules = mEventRules;
         this.mEventPrize = mEventPrize;
+        this.mEvent_register = mEvent_register;
     }
 
 
@@ -39,6 +42,15 @@ public class EventsData {
     public void setPrize(String mEventPrize) {
         mEventPrize = mEventPrize;
     }
+
+    public String getEventRegister() {
+        return mEvent_register;
+    }
+
+    public void setEventRegister(String mEventRegister) {
+        mEventRegister = mEventRegister;
+    }
+
 
     public String getRules() {
         return mEventRules;
